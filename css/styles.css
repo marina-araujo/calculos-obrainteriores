@@ -1,0 +1,68 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que o body ocupa a altura total da tela */
+}
+
+header {
+    width: 100%;
+    /*background-color: #f0f0f5; /* Cor de fundo para o cabeçalho */
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.container {
+    background: #f5f5f7;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px; /* Espaçamento entre o cabeçalho e o conteúdo */
+}
+
+#resultado-revestimentos, #resultado-tinta {
+    padding-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #0071e3;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    box-sizing: border-box; /* Garante que o padding não aumenta a largura total */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Materiais</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showPage('revestimentos')">Revestimentos</button>
+            <button onclick="showPage('tinta')">Cálculo de Tinta</button>
+        </nav>
+    </header>
+    
+    <section id="revestimentos" class="container">
+        <h1>Calcule a área e a quantidade de Revestimentos</h1>
+        <form id="form-revestimentos">
+            <label for="largura">Largura da parede/piso</label>
+            <input type="text" id="largura" name="largura">
+            <label for="altura">Altura/comprimento da parede/piso</label>
+            <input type="text" id="altura" name="altura">
+            <label for="larrev">Largura da peça do revestimento</label>
+            <input type="text" id="larrev" name="larrev">
+            <label for="altrev">Altura/comprimento da peça do revestimento</label>
+            <input type="text" id="altrev" name="altrev">
+            <label for="qtd-caixa">Quantidade de peças por caixa</label>
+            <input type="text" id="qtd-caixa" name="qtd-caixa">
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado-revestimentos"></div>
+    </section>
+    <section id="tinta" class="container hidden">
+        <h1>Calcule a quantidade de Tinta</h1>
+        <form id="form-tinta">
+            <label for="largura-tinta">Largura da parede</label>
+            <input type="text" id="largura-tinta" name="largura-tinta">
+            <label for="altura-tinta">Altura da parede</label>
+            <input type="text" id="altura-tinta" name="altura-tinta">
+            <label for="rendimento">Rendimento da tinta (m²/L)</label>
+            <input type="text" id="rendimento" name="rendimento">
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado-tinta"></div>
+    </section>
+    
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
